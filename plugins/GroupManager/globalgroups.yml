@@ -184,7 +184,70 @@ groups:
     - essentials.jail.allow.mail
     - essentials.jail.allow.ping
     - essentials.jail.allow.seen
-
+   g:essentials_vip:
+    permissions:
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.back
+    - essentials.back.ondeath
+    - essentials.balance
+    - essentials.balance.others
+    - essentials.balancetop
+    - essentials.book
+    - essentials.chat.color
+    - essentials.chat.format
+    - essentials.chat.shout
+    - essentials.chat.question
+    - essentials.compass
+    - essentials.delhome
+    - essentials.depth
+    - essentials.exp
+    - essentials.getpos
+    - essentials.hat
+    - essentials.home
+    - essentials.ignore
+    - essentials.itemdb
+    - essentials.kit
+    - essentials.kits.tools
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.nick
+    - essentials.pay
+    - essentials.ping
+    - essentials.powertool
+    - essentials.powertooltoggle
+    - essentials.protect
+    - essentials.recipe
+    - essentials.seen
+    - essentials.sethome
+    - essentials.sethome.bed
+    - essentials.sethome.multiple
+    - essentials.signs.use.*
+    - essentials.signs.create.disposal
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.signs.create.trade
+    - essentials.signs.break.disposal
+    - essentials.signs.break.mail
+    - essentials.signs.break.protection
+    - essentials.signs.break.trade
+    - essentials.suicide
+    - essentials.time
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.worth
+    - essentials.jail.allow.mail
+    - essentials.jail.allow.ping
+    - essentials.jail.allow.seen
+    
   g:essentials_moderator:
     permissions:
     - -essentials.spawner.enderdragon
@@ -264,81 +327,4 @@ groups:
     - -essentials.reloadall
     - -essentials.plugin
     - essentials.*
-
-# Permission nodes for Towny by Llmdl
-# https://www.spigotmc.org/resources/towny-advanced.72694/
-# Materials https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-  g:towny_default:
-    permissions:
-    - towny.chat.local
-
-  g:towny_builder:
-    permissions:
-    - towny.wild.build.OAK_SAPLING
-    - towny.wild.destroy.OAK_SAPLING
-    - towny.wild.destroy.GOLD_ORE
-    - towny.wild.destroy.IRON_ORE
-    - towny.wild.destroy.COAL_ORE
-    - towny.wild.build.OAK_LOG
-    - towny.wild.destroy.OAK_LOG
-    - towny.wild.destroy.OAK_LEAVES
-    - towny.wild.destroy.LAPIS_ORE
-    - towny.wild.destroy.TALL_GRASS
-    - towny.wild.destroy.LEGACY_YELLOW_FLOWER
-    - towny.wild.destroy.LEGACY_RED_FLOWER
-    - towny.wild.destroy.BROWN_MUSHROOM
-    - towny.wild.destroy.RED_MUSHROOM
-    - towny.wild.destroy.TORCH
-    - towny.wild.destroy.DIAMOND_ORE
-    - towny.wild.destroy.REDSTONE_ORE
-    - towny.wild.destroy.LEGACY_GLOWING_REDSTONE_ORE
-    - towny.wild.destroy.SNOW
-    - towny.wild.destroy.CACTUS
-    - towny.wild.destroy.CLAY
-    - towny.wild.destroy.SUGAR_CANE
-    - towny.wild.destroy.PUMPKIN
-    - towny.wild.destroy.MELON
-    - towny.wild.destroy.VINE
-    - towny.wild.destroy.LILY_PAD
-    - towny.wild.destroy.NETHER_WART
-
-  g:towny_moderator:
-    permissions:
-    - towny.chat.mod
-    - towny.wild.switch.minecraft:wooden_door
-    - towny.wild.build.minecraft:SUGAR_CANE
-    - towny.wild.build.minecraft:PUMPKIN
-    - towny.wild.build.minecraft:MELON
-    - towny.wild.build.minecraft:LILY_PAD
-    - towny.wild.build.minecraft:NETHER_WART
-
-  g:towny_admin:
-    permissions:
-    - towny.admin
-    - -towny.wild.destroy.minecraft:END_PORTAL
-    - -towny.wild.destroy.minecraft:END_PORTAL_FRAME
-    - towny.chat.admin
-
-# Permission nodes for SuperVanish by MyzelYam 
-# https://www.spigotmc.org/resources/supervanish-be-invisible.1331/
-
-  g:vanish_moderator:
-    permissions:
-    - sv.use.1
-    - sv.toggleitems
-    - sv.login
-    - sv.logout
-    - sv.see.1
-    - sv.keepfly
-    - vanish.hooks.essentials.hide
-
-  g:vanish_admin:
-    permissions:
-    - sv.others
-    - sv.reload
-    - sv.list
-    - sv.recreatefiles
-    - sv.use.2
-    - sv.see.2
-    - sv.notoggle
 

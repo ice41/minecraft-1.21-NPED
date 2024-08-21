@@ -19,7 +19,6 @@ kits:
       - stonepickaxe 1
       - stoneaxe 1
       - bread 5
-      - writtenbook 1 title:&bLivro_de_Iniciantes author:NPED lore:Livro_de_regras book:regras
   dtools:
     delay: -1
     items:
@@ -49,6 +48,7 @@ kits:
       - stonepickaxe 1
       - stoneaxe 1
       - bread 5
+      - writtenbook 1 title:&bLivro_de_Iniciantes author:NPED lore:Livro_de_regras book:regras
   moderador:
     delay: 0
     items:

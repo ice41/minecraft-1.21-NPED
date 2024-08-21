@@ -1,0 +1,198 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Moderador:
+    default: false
+    permissions: []
+    inheritance:
+    - engenheiro
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:jobs_moderator
+    - g:worldedit_moderator
+    - g:worldguard_moderator
+    - g:deathbukkit_moderator
+    - g:wesv_moderator
+    info:
+      build: true
+      prefix: '&f[&9Moderador&f] &f'
+      suffix: ''
+  Novato:
+    default: false
+    permissions: []
+    inheritance: []
+    info:
+      build: false
+      prefix: '&f'
+      suffix: ''
+  Patrão:
+    default: false
+    permissions:
+    - vanish.*
+    - '*'
+    - essentials.*
+    - bukkit.*
+    - multiverse.*
+    - worldedit.*
+    - worldguard.*
+    - mcmmo.*
+    - bukkit.command.*
+    - bukkit.*
+    - jobs.*
+    inheritance:
+    - admin
+    info:
+      build: true
+      prefix: '&f[&8Patrão&f] &2'
+      suffix: '&e'
+  PVP:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    info:
+      build: true
+      prefix: '&f[&4PVP&f] &9'
+      suffix: ''
+  Admin:
+    default: false
+    permissions: []
+    inheritance:
+    - moderador
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:authme_admin
+    - g:dynmap_admin
+    - g:jobs_admin
+    - g:multiversecore_admin
+    - g:multiverseportal_admin
+    - g:myhelppages_admin
+    - g:worldedit_admin
+    - g:worldguard_admin
+    - g:bukkit_admin
+    info:
+      build: true
+      prefix: '&f[&cAdmin&f] &3'
+      suffix: ''
+  Construtor:
+    default: true
+    permissions: []
+    inheritance:
+    - novato
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:essentials_builder
+    - g:authme_builder
+    - g:dynmap_builder
+    - g:jobs_builder
+    - g:multiversecore_builder
+    - g:multiverseportal_builder
+    - g:myhelppages_build
+    - g:deathbukkit_builder
+    - g:multiverse_builder
+    - g:mcmmo_builder
+    info:
+      build: true
+      prefix: '&f[&eConstrutor&f] &9'
+      suffix: ''
+  Vip:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    - Engenheiro
+    - g:essentials_vip
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:essentials_builder
+    - g:authme_builder
+    - g:dynmap_builder
+    - g:multiversecore_builder
+    - g:multiverseportal_builder
+    - g:deathbukkit_builder
+    - g:multiverse_builder
+    - g:mcmmo_builder
+    info:
+      build: true
+      prefix: '&f[&bVip&f] &9'
+      suffix: ''
+  Vip_Explorador:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    - Engenheiro
+    - Vip
+    - g:essentials_Vip_Explorador
+    info:
+      build: true
+      prefix: '&f[&bVip_Explorador&f] &9'
+      suffix: ''
+  Vip_Carvão:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    - Engenheiro
+    - Vip
+    - g:essentials_Vip_Carvão
+    info:
+      build: true
+      prefix: '&f[&bVip_C&f] &9'
+      suffix: ''
+  Vip_Ferro:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    - Engenheiro
+    - Vip_Carvão
+    - g:essentials_Vip_Ferro
+    info:
+      build: true
+      prefix: '&f[&bVip_F&f] &9'
+      suffix: ''
+  Vip_Ouro:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    - Engenheiro
+    - Vip_Ferro
+    - g:essentials_Vip_Ouro
+    info:
+      build: true
+      prefix: '&f[&bVip_O&f] &9'
+      suffix: ''
+  Vip_Diamante:
+    default: false
+    permissions: []
+    inheritance:
+    - construtor
+    - Engenheiro
+    - Vip_Ouro
+    info:
+      build: true
+      prefix: '&f[&bVip-D&f] &9'
+      suffix: ''
+  Engenheiro:
+    default: false
+    permissions: []
+    inheritance:
+    - pvp
+    info:
+      build: true
+      prefix: '&f[&6Engenheiro&f] &9'
+      suffix: ''

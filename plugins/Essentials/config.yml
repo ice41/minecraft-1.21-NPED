@@ -24,10 +24,10 @@
 
 # A color code between 0-9 or a-f. Set to 'none' to disable.
 # In 1.16+ you can use hex color codes here as well. (For example, #613e1d is brown).
-ops-name-color: '4'
+ops-name-color: 'none'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
-nickname-prefix: '~'
+nickname-prefix: ''
 
 # The maximum length allowed in nicknames. The nickname prefix is included in this.
 max-nick-length: 15
@@ -91,11 +91,11 @@ teleport-passenger-dismount: true
 teleport-cooldown: 0
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
-teleport-delay: 0
+teleport-delay: 4
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
-teleport-invulnerability: 4
+teleport-invulnerability: 410
 
 # Whether to make all teleportations go to the center of the block; where the x and z coordinates decimal become .5
 teleport-to-center: true
@@ -160,8 +160,8 @@ notify-player-of-mail-cooldown: 60
 # See http://wiki.bukkit.org/Commands.yml#aliases for more information.
 
 overridden-commands:
-#  - god
-#  - info
+  - god
+  - info
 
 # Disabling commands here will prevent Essentials handling the command, this will not affect command conflicts.
 # You should not have to disable commands used in other plugins, they will automatically get priority.
@@ -342,18 +342,18 @@ pastebin-createkit: false
 
 enabledSigns:
   #- color
-  #- balance
-  #- buy
-  #- sell
-  #- trade
-  #- free
-  #- warp
-  #- kit
+  - balance
+  - buy
+  - sell
+  - trade
+  - free
+  - warp
+  - kit
   #- mail
   #- enchant
   #- gamemode
   #- heal
-  #- info
+  - info
   #- spawnmob
   #- repair
   #- time
@@ -408,7 +408,7 @@ per-warp-permission: false
 list:
     # To merge groups, list the groups you wish to merge
     #Staff: owner admin moderator
-    Admins: owner admin
+    Admins: Patrão admin
     # To limit groups, set a max user limit
     #builder: 20
     # To hide groups, set the group as hidden
@@ -430,13 +430,13 @@ debug: false
 locale: pt
 
 # Turn off god mode when people leave the server.
-remove-god-on-disconnect: false
+remove-god-on-disconnect: true
 
 # Auto-AFK
 # After this timeout in seconds, the user will be set as AFK.
 # This feature requires the player to have essentials.afk.auto node.
 # Set to -1 for no timeout.
-auto-afk: 300
+auto-afk: 3000
 
 # Auto-AFK Kick
 # After this timeout in seconds, the user will be kicked from the server.
@@ -507,8 +507,8 @@ allow-silent-join-quit: false
 # You can set custom join and quit messages here. Set this to "none" to use the default Minecraft message,
 # or set this to "" to hide the message entirely.
 # You may use color codes, {USERNAME} for the player's name, and {PLAYER} for the player's displayname.
-custom-join-message: "none"
-custom-quit-message: "none"
+custom-join-message: "{PLAYER} Entrou"
+custom-quit-message: "{PLAYER} Saiu"
 
 # Should Essentials override the vanilla "Server Full" message with its own from the language file?
 # Set to false to keep the vanilla message.
@@ -521,7 +521,9 @@ hide-join-quit-messages-above: -1
 
 # Add worlds to this list, if you want to automatically disable god mode there.
 no-god-in-worlds:
-#  - world_nether
+ - Cidade_nether
+ - Cidade_the_end
+ - Cidade
 
 # Set to true to enable per-world permissions for teleporting between worlds with essentials commands.
 # This applies to /world, /back, /tp[a|o][here|all], but not warps.
@@ -550,10 +552,10 @@ unsafe-enchantments: false
 
 #Do you want Essentials to keep track of previous location for /back in the teleport listener?
 #If you set this to true any plugin that uses teleport will have the previous location registered.
-register-back-in-listener: false
+register-back-in-listener: true
 
 #Delay to wait before people can cause attack damage after logging in.
-login-attack-delay: 5
+login-attack-delay: 10
 
 #Set the max fly speed, values range from 0.1 to 1.0
 max-fly-speed: 0.8
@@ -644,7 +646,7 @@ teleport-back-when-freed-from-jail: true
 
 # Whether or not jail time should only be counted while the user is online.
 # If true, a jailed player's time will only decrement when they are online.
-jail-online-time: false
+jail-online-time: true
 
 # Set the timeout, in seconds for players to accept a tpa before the request is cancelled.
 # Set to 0 for no timeout.
@@ -702,9 +704,14 @@ world-home-permissions: false
 # Create the 'home-rank' below, and give the matching permission: essentials.sethome.multiple.<home-rank>
 # For more information, visit http://wiki.ess3.net/wiki/Multihome
 sethome-multiple:
-  default: 3
-  vip: 5
+  default: 2
+  Admin: 10
   staff: 10
+  Vip: 3
+  Vip_Carvão: 4
+  Vip_Ferro: 6
+  Vip_Ouro: 8
+  Vip_Diamante: 10
 
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
 # Remember, they MUST have both permission nodes in order to be able to set multiple homes.
@@ -734,11 +741,15 @@ confirm-home-overwrite: false
 # You can control the values of items that are sold to the server by using the /setworth command.
 
 # Defines the balance with which new players begin. Defaults to 0.
-starting-balance: 0
+starting-balance: 20
 
 # Defines the cost to use the given commands PER USE.
 # Some commands like /repair have sub-costs, check the wiki for more information.
 command-costs:
+# /kit tools costs €20 PER USE
+  kit-tools: 20
+  # /kit regras costs €3000 PER USE
+  kit-regrascomprar: 3000
   # /example costs $1000 PER USE
   #example: 1000
   # /kit tools costs $1500 PER USE
@@ -747,7 +758,7 @@ command-costs:
 # Set this to a currency symbol you want to use.
 # Remember, if you want to use special characters in this document, 
 # such as accented letters, you MUST save the file as UTF-8, not ANSI.
-currency-symbol: '$'
+currency-symbol: '€'
 
 # Enable this to make the currency symbol appear at the end of the amount rather than at the start.
 # For example, the euro symbol typically appears after the current amount.
@@ -847,6 +858,9 @@ chat:
   group-formats:
   #  default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
   #  admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
+  Admins: '{WORLDNAME} &b[{GROUP}]&r {DISPLAYNAME}&7:&b {MESSAGE}'
+  Patrão: '{WORLDNAME} &b[{GROUP}]&r {DISPLAYNAME}&7:&b {MESSAGE}'
+  Vip: '{WORLDNAME} &b[{GROUP}]&r {DISPLAYNAME}&7:&b {MESSAGE}'
 
   # If you are using group formats make sure to remove the '#' to allow the setting to be read.
   # Note: Group names are case-sensitive so you must match them up with your permission plugin.
@@ -1068,7 +1082,7 @@ newbies:
   # If so, use this format, replacing {DISPLAYNAME} with the player name.
   # If not, set to ''
   #announce-format: ''
-  announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
+  announce-format: '&dBem-Vindo {DISPLAYNAME}&d ao Servidor &0N&1PED&f!'
 
   # When we spawn for the first time, which spawnpoint do we use?
   # Set to "none" if you want to use the spawn point of the world.

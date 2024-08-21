@@ -136,7 +136,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '-7557634824055669565'
+    seed: '-5723822066103877179'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
