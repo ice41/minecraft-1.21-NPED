@@ -10,13 +10,13 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    cidadenether:
-        min: {x: -41.0, y: 0.0, z: -66.0}
-        flags: {creeper-explosion: deny, block-place: deny, pvp: deny, passthrough: allow,
-            tnt: deny, block-break: deny, enderman-grief: deny, build: deny, other-explosion: deny,
-            ghast-fireball: deny}
-        max: {x: 48.0, y: 255.0, z: 33.0}
-        priority: 0
-        type: cuboid
-        owners: {}
+    netherspawn:
+        min: {x: 6, y: 65, z: -9}
+        max: {x: 19, y: 75, z: 3}
         members: {}
+        flags: {other-explosion: deny, mob-damage: deny, lava-fire: deny, vehicle-destroy: deny, pvp: deny, chest-access: allow,
+            lava-flow: deny, tnt: deny, entity-item-frame-destroy: deny, mob-spawning: deny,
+            fire-spread: deny, ghast-fireball: deny}
+        owners: {}
+        type: cuboid
+        priority: 0

@@ -1,7 +1,8 @@
 Brewer:
   fullname: Brewer
   shortname: Br
-  description: Earns money brewing potions.
+  FullDescription:
+  - "Earns money brewing potions."
   ChatColour: LIGHT_PURPLE
   chat-display: full
   max-level: 200
@@ -27,8 +28,7 @@ Brewer:
       - Brew some stuff and get money
       - Get 100 for this!
   Gui:
-    Id: 379
-    Data: 0
+    ItemStack: brewing_stand
   Brew:
     nether_wart:
       income: 6.0

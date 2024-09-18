@@ -31,7 +31,7 @@ regions:
     explosion-flags-block-entity-damage: true
     high-frequency-flags: false
     protect-against-liquid-flow: false
-    wand: 336
+    wand: 271
     max-claim-volume: 30000
     claim-only-inside-existing-regions: false
     max-region-count-per-player:

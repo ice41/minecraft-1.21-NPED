@@ -32,7 +32,7 @@ removed-commands:
 # Enable/Disable String Commands Protection
 string-command-protection: false
 # String command message
-string-command-blocked: "&cThis command has been blocked!"
+string-command-blocked: "&cEste comando foi bloqueado!"
 # String command list, this list may contain commands that actually do not exist on the server.
 string-commands:
   - /spigot
@@ -41,7 +41,7 @@ string-commands:
 # Enable/Disable console only commands
 console-only-commands: false
 # Console only message
-console-only-message: "&cThis command is console only!"
+console-only-message: "&cEste comando é apenas console!"
 # Console only command list
 console-commands:
   - /op
@@ -58,7 +58,7 @@ plugins:
 ##########################
 # General Messages below #
 ##########################
-nopermission: You don't have permission to do this!
+nopermission: Não tem permissão para fazer isso!
 # In this messages section you can add more commands to have custom messages!
 # The key has to be what the command is e.g "about: 'your message'" this is not case SenSITive
 messages:

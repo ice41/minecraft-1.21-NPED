@@ -1,4 +1,51 @@
 worlds:
+  mapinha:
+    ==: MVWorld
+    hidden: 'false'
+    alias: mapinha
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: mapinha
+    allowWeather: 'true'
+    difficulty: NORMAL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -326.18913735975207
+      y: 70.0
+      z: 63.940914225991044
+      pitch: 12.150074
+      yaw: -95.09979
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-2032795982907864146'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'true'
   Criativo:
     ==: MVWorld
     hidden: 'false'
@@ -54,7 +101,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: ''
+    respawnWorld: Cidade_nether
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -80,16 +127,16 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 2.338317990811803
-      y: 73.0
-      z: -15.444194885397689
-      pitch: 11.123741
-      yaw: 89.53303
+      x: 13.165014879636043
+      y: 71.0
+      z: -0.5272750980495352
+      pitch: -1.6499966
+      yaw: 0.88934326
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NETHER
-    seed: '57838665134412238'
+    seed: '4701580769684369501'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -136,7 +183,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: THE_END
-    seed: '-5723822066103877179'
+    seed: '4701580769684369501'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
@@ -183,7 +230,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '-7602345352821893400'
+    seed: '4701580769684369501'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'

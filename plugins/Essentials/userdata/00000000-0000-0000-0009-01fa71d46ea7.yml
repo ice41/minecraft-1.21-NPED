@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 189.113.229.146
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1726054737256
+  login: 1726054170434
+money: '20'
+lastlocation:
+  world: 0804d7b0-8eeb-4e02-a905-e664e5c11f42
+  world-name: mapinha
+  x: -329.0337
+  y: 69.0
+  z: 63.87806
+  yaw: 71.43550109863281
+  pitch: 17.492340087890625
+last-account-name: BMSVieira
+geolocation: Brazil
+logoutlocation:
+  world: aae8b3a4-8824-489e-b92d-e77330d5d681
+  world-name: Cidade
+  x: 181.68027
+  y: 63.0
+  z: -70.81571
+  yaw: 103.22662353515625
+  pitch: 4.1576690673828125

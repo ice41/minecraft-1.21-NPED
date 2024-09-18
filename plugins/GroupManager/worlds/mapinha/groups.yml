@@ -1,0 +1,112 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Moderador:
+    default: false
+    permissions: []
+    inheritance:
+    - engenheiro
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:worldedit_moderator
+    - g:multiverse_admin
+    info:
+      build: true
+      prefix: '&f[&9Moderador&f] &f'
+      suffix: ''
+  Patrão:
+    default: false
+    permissions:
+    - vanish.*
+    - '*'
+    - essentials.*
+    - bukkit.*
+    - multiverse.*
+    - worldedit.*
+    - worldguard.*
+    - mcmmo.*
+    - bukkit.command.*
+    - bukkit.*
+    - jobs.*
+    inheritance:
+    - admin
+    info:
+      build: true
+      prefix: '&f[&Dono&f] &2'
+      suffix: '&e'
+  PVP:
+    default: false
+    permissions: []
+    inheritance:
+    - builder
+    info:
+      build: true
+      prefix: '&f[&4PVP&f] &9'
+      suffix: ''
+  Admin:
+    default: false
+    permissions: []
+    inheritance:
+    - moderador
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:auth_admin
+    - multiversecore_admin
+    - g:multiverseportal_admin
+    - g:worldedit_admin
+    - g:worldguard_admin
+    - g:bukkit_admin
+    - g:multiverse_admin
+    info:
+      build: true
+      prefix: '&f[&cAdmin&f] &3'
+      suffix: ''
+  builder:
+    default: true
+    permissions: []
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:essentials_builder
+    - g:multiverseportals_builder
+    info:
+      build: true
+      prefix: '&f[&eConstrutor&f] &9'
+      suffix: ''
+  vip:
+    default: false
+    permissions: []
+    inheritance:
+    - builder
+    - Engenheiro
+    - g:essentials_vip
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:essentials_builder
+    - g:authme_builder
+    - g:multiverseportal_builder
+    - g:multiverse_builder
+    info:
+      build: true
+      prefix: '&f[&bVip&f] &9'
+      suffix: ''
+  Engenheiro:
+    default: false
+    permissions: []
+    inheritance:
+    - builder
+    info:
+      build: true
+      prefix: '&f[&6Engenheiro&f] &9'
+      suffix: ''

@@ -1,7 +1,8 @@
 Weaponsmith:
   fullname: Weaponsmith
   shortname: W
-  description: Earns money from crafting and repairing weapons.
+  FullDescription:
+  - "Earns money from crafting and repairing weapons."
   ChatColour: DARK_PURPLE
   chat-display: full
   max-level: 200
@@ -27,8 +28,7 @@ Weaponsmith:
       - Craft weapons and get money
       - Get 100 for this!
   Gui:
-    Id: 58
-    Data: 0
+    ItemStack: crafting_table
   Craft:
     wooden_sword:
       income: 1.0

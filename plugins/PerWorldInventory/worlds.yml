@@ -22,6 +22,7 @@ groups:
     - Cidade
     - Cidade_nether
     - Cidade_the_end
+    - mapinha
     default-gamemode: SURVIVAL
   creative:
      worlds:

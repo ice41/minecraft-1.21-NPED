@@ -7,7 +7,7 @@
 # Default language.
 # Example: en, ru
 # File in locale folder with same name should exist. Example: messages_ru.yml
-locale-language: pt-BR
+locale-language: en
 storage:
   # storage method, can be MySQL or sqlite
   method: sqlite
@@ -84,9 +84,10 @@ Optimizations:
     # the payments will only works in the given worlds.
     UseAsWhiteList: false
     List:
-    - Cidade
+    - Example
+    - Worlds
   Explore:
-    # Do you want to use new exploration tracking method. Only for 1.14+ servers
+    # Do you want to use new exploration tracking method. Only for 1.16+ servers
     NewMethod: true
     # By setting this to true when there is max amount of players explored a chunk then it will be marked as fully explored and exact players who explored it will not be saved to save some memory
     Compact: true
@@ -150,11 +151,11 @@ jobs-shop-enabled: true
 # Use jobs.nearspawner.[amount] to define multiplayer. Example jobs.nearspawner.-0.5 will pay half of payment, jobs.nearspawner.-1 will not pay at all
 enable-pay-near-spawner: true
 # Option to allow payment to be made in creative mode. This ignoring when a group has 'jobs.paycreative' permission.
-enable-pay-creative: false
+enable-pay-creative: true
 # Option to allow payment to be made for exploring when player flies
-enable-pay-for-exploring-when-flying: false
+enable-pay-for-exploring-when-flying: true
 # Option to allow payment to be made for exploring when player gliding.
-enable-pay-for-exploring-when-gliding: false
+enable-pay-for-exploring-when-gliding: true
 # Option to allow reset exploring data.
 enable-reset-exploring-data: false
 # Disables the payment when the player riding on an entity.
@@ -372,7 +373,7 @@ Economy:
     PayForRenaming: true
   Enchant:
     # Do you want to give money for enchanting items in anvil?
-    PayForEnchantingOnAnvil: false
+    PayForEnchantingOnAnvil: true
     # Do you want to allow players to enchant their boosted items?
     AllowEnchantingBoostedItems: true
   Crafting:
@@ -456,6 +457,8 @@ ExploitProtections:
       # When enabled we will avoid checking damage done to ender dragon, wither and warden
       # This can help out in case you have server with custom damage sources which might not be registered and payouts might not be given out
       IgnoreBosses: true
+    # Should tamed animals payout to their owners?
+    TameablesPayout: true
   # McMMO abilities
   McMMO:
     # Players will get part of money from cutting trees with treefeller ability enabled.
@@ -474,9 +477,9 @@ ExploitProtections:
   Smelt:
     # Prevent payments when hoppers moving items into furnace
     # Player will not get paid, but items will be smelted
-    PreventHopperFillUps: true
+    PreventHopperFillUps: false
   Brew:
-    PreventBrewingStandFillUps: true
+    PreventBrewingStandFillUps: false
   # Do you want to show informational message when payments from blocks gets disabled due to hopper transfers
   informOnPaymentDisable: true
 # Breeder finder.
@@ -496,8 +499,10 @@ ActionBars:
     # When this set to true player will see action bar messages by default
     # When false, players will see chat messages instead.
     EnabledByDefault: true
-    # If true, should we mute the payment messages from appearing in chat if actionbar is disabled?
-    SilentMode: false
+    # Time in seconds action bar will remain visible if enabled
+    # This time is used to define for how long we will accumulate payments to be shown in action bar
+    # If no payments are being issued in defined time then it will reset to 0 and remain hidden
+    KeepFor: 5
 BossBar:
   # Enables BossBar feature
   # Works only from 1.9 mc version
@@ -505,18 +510,11 @@ BossBar:
   Messages:
     # When this set to true player will see Bossbar messages by default
     EnabledByDefault: true
-  # If enabled boss bar will update after each action
-  # If disabled, BossBar will update only on each payment. This can save some server resources
-  ShowOnEachAction: false
   # Defines in how many parts bossbar will be split visually
   # Valid options: 1, 6, 10, 12, 20
   SegmentCount: 1
   # How long in sec to show BossBar for player
-  # If you have disabled ShowOnEachAction, then keep this number higher than payment interval for better experience
-  Timer: 6
-  # If enabled, bossbar creation and management will be asynchronous.
-  # This avoids TPS drops when the ShowOnEachAction option is activated.
-  Async: false
+  Timer: 5
 # You can enable/disable message shown for players in action bar
 ShowActionBars:
   OnTitleChange: true

@@ -48,7 +48,7 @@ snapshots:
     directory:
 
 navigation-wand:
-    item: 345
+    item: 271
     max-distance: 100
 
 scripting:

@@ -10,11 +10,23 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    logo:
-        min: {x: -27.0, y: 0.0, z: 16.0}
-        max: {x: 1.0, y: 115.0, z: 29.0}
+    spawn:
+        min: {x: -5, y: 15, z: -10}
+        max: {x: 4, y: 20, z: -4}
         members: {}
-        flags: {}
+        flags: {lava-fire: deny, vehicle-destroy: deny, pvp: deny, chest-access: allow,
+            lava-flow: deny, tnt: deny, entity-item-frame-destroy: deny, mob-spawning: deny,
+            fire-spread: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    logo:
+        min: {x: -27, y: 0, z: 16}
+        max: {x: 1, y: 115, z: 29}
+        members: {}
+        flags: {lava-fire: deny, vehicle-destroy: deny, pvp: deny, chest-access: allow,
+            lava-flow: deny, tnt: deny, entity-item-frame-destroy: deny, mob-spawning: deny,
+            fire-spread: deny}
         owners: {}
         type: cuboid
         priority: 0

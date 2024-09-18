@@ -1,7 +1,8 @@
 Woodcutter:
   fullname: Woodcutter
   shortname: W
-  description: Earns money felling and planting trees
+  FullDescription:
+  - "Earns money felling and planting trees"
   ChatColour: GREEN
   chat-display: full
   max-level: 200
@@ -27,57 +28,21 @@ Woodcutter:
       - Break logs and get money
       - Get 100 for this!
   Gui:
-    Id: 17
-    Data: 2
+    ItemStack: birch_log
   Break:
-    oak_log:
-      income: 1.0
-      points: 1.0
-      experience: 1.0
-    spruce_log:
-      income: 1.0
-      points: 1.0
-      experience: 1.0
-    birch_log:
-      income: 1.0
-      points: 1.0
-      experience: 1.0
-    jungle_log:
-      income: 1.0
-      points: 1.0
-      experience: 1.0
-    acacia_log:
-      income: 1.0
-      points: 1.0
-      experience: 1.0
-    dark_oak_log:
-      income: 1.0
-      points: 1.0
-      experience: 1.0
-    stripped_oak_log:
-      income: 0.75
-      points: 0.75
-      experience: 0.25
-    stripped_spruce_log:
-      income: 0.75
-      points: 0.75
-      experience: 0.25
-    stripped_birch_log:
-      income: 0.75
-      points: 0.75
-      experience: 0.25
-    stripped_jungle_log:
-      income: 0.75
-      points: 0.75
-      experience: 0.25
-    stripped_acacia_log:
-      income: 0.75
-      points: 0.75
-      experience: 0.25
-    stripped_dark_oak_log:
-      income: 0.75
-      points: 0.75
-      experience: 0.25
+    materials:
+    - oak_log;1.0;1.0;1.0
+    - spruce_log;1.0;1.0;1.0
+    - birch_log;1.0;1.0;1.0
+    - jungle_log;1.0;1.0;1.0
+    - acacia_log;1.0;1.0;1.0
+    - dark_oak_log;1.0;1.0;1.0
+    - stripped_oak_log;0.75;0.75;0.25
+    - stripped_spruce_log;0.75;0.75;0.25
+    - stripped_birch_log;0.75;0.75;0.25
+    - stripped_jungle_log;0.75;0.75;0.25
+    - stripped_acacia_log;0.75;0.75;0.25
+    - stripped_dark_oak_log;0.75;0.75;0.25
   Kill:
     Player:
       income: 7.5

@@ -8,5 +8,6 @@ groups:
     - cidade
     - cidade_the_end
     - cidade_nether
+    - mapinha
     shares:
     - all

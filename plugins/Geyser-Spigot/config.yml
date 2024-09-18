@@ -14,7 +14,7 @@
 bedrock:
   # The IP address that will listen for connections.
   # Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server.
-  #address: 0.0.0.0
+  address: 0.0.0.0
   # The port that will listen for connections
   port: 19132
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
@@ -23,10 +23,10 @@ bedrock:
   clone-remote-port: false
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true
   # If either of these are empty, the respective string will default to "Geyser"
-  motd1: "NPED"
-  motd2: "Servidor NPED."
+  motd1: NPED
+  motd2: Servidor NPED 1.21.23
   # The Server Name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
-  server-name: "NPED"
+  server-name: NPED
   # How much to compress network traffic to the Bedrock client. The higher the number, the more CPU usage used, but
   # the smaller the bandwidth used. Does not have any effect below -1 or above 9. Set to -1 to disable.
   compression-level: 6
@@ -53,7 +53,7 @@ remote:
   # Authentication type. Can be offline, online, or floodgate (see https://github.com/GeyserMC/Geyser/wiki/Floodgate).
   # For plugin versions, it's recommended to keep the `address` field to "auto" so Floodgate support is automatically configured.
   # If Floodgate is installed and `address:` is set to "auto", then "auth-type: floodgate" will automatically be used.
-  auth-type: online
+  auth-type: floodgate
   # Whether to enable PROXY protocol or not while connecting to the server.
   # This is useful only when:
   # 1) Your server supports PROXY protocol (it probably doesn't)
@@ -102,7 +102,7 @@ ping-passthrough-interval: 3
 
 # Whether to forward player ping to the server. While enabling this will allow Bedrock players to have more accurate
 # ping, it may also cause players to time out more easily.
-forward-player-ping: false
+forward-player-ping: true
 
 # Maximum amount of players that can connect. This is only visual at this time and does not actually limit player count.
 max-players: 100
@@ -115,7 +115,7 @@ debug-mode: false
 # https://cdn.discordapp.com/attachments/613170125696270357/957075682230419466/Screenshot_from_2022-03-25_20-35-08.png
 # This can be disabled by going into Bedrock settings under the accessibility tab and setting "Text Background Opacity" to 0
 # This setting can be set to "title", "actionbar" or "false"
-show-cooldown: title
+show-cooldown: actionbar
 
 # Controls if coordinates are shown to players.
 show-coordinates: true
@@ -187,7 +187,7 @@ metrics:
   # If metrics should be enabled
   enabled: true
   # UUID of server, don't change!
-  uuid: e3bd0a26-edf7-4434-8b01-b3e2111c185b
+  uuid: generateduuid
 
 # ADVANCED OPTIONS - DO NOT TOUCH UNLESS YOU KNOW WHAT YOU ARE DOING!
 

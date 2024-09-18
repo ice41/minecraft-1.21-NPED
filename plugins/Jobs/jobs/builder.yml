@@ -1,7 +1,8 @@
 Builder:
   fullname: Builder
   shortname: B
-  description: Earns money for building structures.
+  FullDescription:
+  - "Earns money for building structures."
   ChatColour: WHITE
   chat-display: full
   max-level: 200
@@ -27,56 +28,8 @@ Builder:
       - Place blocks and get money
       - Get 100 for this!
   Gui:
-    Item: brick_stairs
+    ItemStack: brick_stairs
   Place:
-    stripped_oak_wood:
-      income: 2
-      points: 2
-      experience: 2
-    stripped_spruce_wood:
-      income: 2
-      points: 2
-      experience: 2
-    stripped_birch_wood:
-      income: 2
-      points: 2
-      experience: 2
-    stripped_jungle_wood:
-      income: 2
-      points: 2
-      experience: 2
-    stripped_acacia_wood:
-      income: 2
-      points: 2
-      experience: 2
-    stripped_dark_oak_wood:
-      income: 2
-      points: 2
-      experience: 2
-    dead_tube_coral_block:
-      income: 2
-      points: 2
-      experience: 3
-    dead_brain_coral_block:
-      income: 2
-      points: 2
-      experience: 3
-    dead_bubble_coral_block:
-      income: 2
-      points: 2
-      experience: 3
-    dead_fire_coral_block:
-      income: 2
-      points: 2
-      experience: 3
-    dead_horn_coral_block:
-      income: 2
-      points: 2
-      experience: 3
-    dried_kelp_block:
-      income: 2
-      points: 2
-      experience: 3
     stone:
       income: 1.3
       points: 1.3
@@ -426,6 +379,10 @@ Builder:
       points: 1.5
       experience: 2
     black_stained_glass:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    tinted_glass:
       income: 1.5
       points: 1.5
       experience: 2

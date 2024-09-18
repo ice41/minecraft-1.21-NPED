@@ -1,9 +1,9 @@
 # Registration
 registration:
     disabled: '&cRegito de novos utilizadores desactivado'
-    name_taken: '&cUtilizador jÃ¡ registado'
-    register_request: '&bRegiste-se para jogar'
-    command_usage: '&cUse: /register seu@email.com seu@email.com'
+    name_taken: '&cUtilizador já registado'
+    register_request: '&bRegiste-se para jogar use /register <a senha que quer> <a senha novamente>'
+    command_usage: '&cUse: /register <a senha que quer> <a senha novamente>'
     reg_only: 'Apenas jogadores registados! Use "&b/register <a senha que quer> <a senha novamente>"'
     success: '&cRegistado com sucesso!'
     kicked_admin_registered: 'Um administrador registou-te, por favor entre novamente'
@@ -16,10 +16,10 @@ password:
     wrong_length: '&fPassword demasiado curta'
 # Login
 login:
-    command_usage: '&cUse: &b/login password'
+    command_usage: '&cUse: &b/login <senha>'
     wrong_password: '&cPassword errada!'
     success: '&cAutenticado com sucesso!'
-    login_request: '&cIdentifique-se com "/login password"'
+    login_request: '&cIdentifique-se com "/login <senha>"'
     timeout_error: '&fExcedeu o tempo para autenticacao'
 # Errors
 error:
@@ -45,7 +45,7 @@ unregister:
     command_usage: '&fPara cancelar o registo use &bUse "/register <o seu nick>"&f para se cancelar o registo'
 # Other messages
 misc:
-    account_not_activated: '&fA sua conta nÃ£o foi ainda activada, verifique o seu email onde irÃ¡ receber indicaÃ§Ãµes para activaÃ§Ã£o de conta. '
+    account_not_activated: '&fA sua conta não foi ainda activada, verifique o seu email onde irÃ¡ receber indicaÃ§Ãµes para activaÃ§Ã£o de conta. '
     password_changed: '&cPassword alterada!'
     logout: '&cSaida com sucesso'
     reload: '&fConfiguracao e base de dados foram recarregadas'

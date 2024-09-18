@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 188.37.14.231
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1726106580072
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1726107835623
+  login: 1726107582776
+money: '20'
+lastlocation:
+  world: aae8b3a4-8824-489e-b92d-e77330d5d681
+  world-name: Cidade
+  x: 175.90833
+  y: 63.0
+  z: -70.80417
+  yaw: 93.15020751953125
+  pitch: 12.789093017578125
+last-account-name: ice41_PT
+geolocation: Portugal
+logoutlocation:
+  world: 0804d7b0-8eeb-4e02-a905-e664e5c11f42
+  world-name: mapinha
+  x: -323.37753
+  y: 69.0
+  z: 64.6683
+  yaw: 90.75750732421875
+  pitch: 5.4430694580078125

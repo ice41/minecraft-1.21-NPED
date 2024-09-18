@@ -1,7 +1,8 @@
 Digger:
   fullname: Digger
   shortname: D
-  description: Earns money for terraforming the world.
+  FullDescription:
+  - "Earns money for terraforming the world."
   ChatColour: GOLD
   chat-display: full
   max-level: 200
@@ -27,8 +28,7 @@ Digger:
       - Dig blocks and get money
       - Get 100 for this!
   Gui:
-    Id: 269
-    Data: 0
+    ItemStack: wooden_shovel
   Break:
     red_sand:
       income: 1

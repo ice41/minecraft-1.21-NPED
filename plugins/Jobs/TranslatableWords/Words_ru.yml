@@ -863,7 +863,7 @@ ItemList:
   YELLOW_WOOL: Жёлтая шерсть
   ZOMBIE_HEAD: Голова (Зомби)
   ZOMBIE_HORSE_SPAWN_EGG: Spawn Zombie Horse
-  ZOMBIE_PIGMAN_SPAWN_EGG: Zombie Pigman Spawn Egg
+  ZOMBIE_PIGMAN_SPAWN_EGG: Яйцо призыва зомби-свиночеловека
   ZOMBIE_SPAWN_EGG: Яйцо призыва зомби
   ZOMBIE_VILLAGER_SPAWN_EGG: Spawn Zombie Villager
   ZOMBIE_WALL_HEAD: Голова
@@ -1491,7 +1491,7 @@ ItemList:
   LEGACY_BURNING_FURNACE: Горящая печь
   LEGACY_NETHER_WARTS: Адский нарост
   LEGACY_IRON_DOOR_BLOCK: Железная дверь
-  LEGACY_GLOWING_REDSTON_ORE: Glowing Redstone Ore
+  LEGACY_GLOWING_REDSTON_ORE: Legacy Glowing Redston Ore
   LEGACY_SUGAR_CANE_BLOCK: Сахарный тростник
   LEGACY_RAW_FISH: Сырая рыба
   LEGACY_SKULL: Голова
@@ -1502,7 +1502,7 @@ ItemList:
   LEGACY_CAKE_BLOCK: Торт
   LEGACY_DIODE_BLOCK_OFF: Красный повторитель (выкл)
   LEGACY_DIODE_BLOCK_ON: Красный повторитель (вкл)
-  LEGACY_MELON_BLOCK: Melon Block
+  LEGACY_MELON_BLOCK: Legacy Melon Block
   LEGACY_REDSTONE_COMPARATOR_OFF: Компаратор (неактивный)
   LEGACY_REDSTONE_COMPARATOR_ON: Компаратор (активный)
   LEGACY_WOODEN_DOOR_BLOCK: Legacy Wooden Door Block
@@ -1512,7 +1512,7 @@ ItemList:
   LEGACY_ACACIA_DOOR: Legacy Acacia Door
   LEGACY_DARK_OAK_DOOR: Legacy Dark Oak Door
   LEGACY_GLOWING_REDSTONE_ORE: Светящаяся красная руда
-  LEGACY_BREWING_STAND: Legacy Brewing Stand
+  LEGACY_BREWING_STAND: Варочная стойка
   LEGACY_WHEAT: Legacy Wheat
 EntityList:
   0-ELDER_GUARDIAN: Elder Guardian

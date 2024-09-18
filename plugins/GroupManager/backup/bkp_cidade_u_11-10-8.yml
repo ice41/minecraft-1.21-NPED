@@ -1,0 +1,35 @@
+users:
+  03c7d2f5-9609-37a6-83a7-d0aff92c25f3:
+    lastname: kelelawar
+    group: Admin
+    subgroups:
+    - Vip_Diamante
+    permissions:
+    - bukkit.*
+    - bukkit.command.op.give
+    - bukkit.command.op.take
+  44b89c9a-1485-3655-9b0d-20f5e9b586f9:
+    lastname: Herbal
+    group: Patrão
+    subgroups: []
+    permissions: []
+  6dc5c8a0-3eac-370d-bc72-c35fd25be638:
+    lastname: Herbalist
+    group: Patrão
+    subgroups: []
+    permissions:
+    - Patrão
+  a6995a87-d796-38c6-adfc-e4ab0c02f0d4:
+    lastname: paviucurto
+    group: Construtor
+    subgroups:
+    - Vip_Ouro
+    - Vip_Explorador
+    permissions: []
+    info:
+      Vip_ouro: all
+  ad76406f-b38f-3ff9-baed-899b70714ecb:
+    lastname: ice41
+    group: Patrão
+    subgroups: []
+    permissions: []

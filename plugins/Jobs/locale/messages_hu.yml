@@ -41,7 +41,7 @@ general:
 command:
   help:
     output:
-      info: Típus /jobs [cmd] ? további információ a parancsról.
+      info: Írd be /jobs [cmd] ? a további információ a parancsról.
       cmdUsage: '&2Használat: &7[command]'
       label: Jobs
       cmdInfoFormat: '[command] &f- &2[description]'
@@ -515,7 +515,7 @@ command:
   top:
     help:
       info: Top játékosok megjelenítése munka alapján.
-      args: '[jobname]'
+      args: '[jobname]/clear oldalszám'
     error:
       nojob: '&cNem találok semmilyen munkát ezzel a névvel.'
     output:
@@ -527,7 +527,7 @@ command:
   gtop:
     help:
       info: Megmutatja a legjobb játékosokat a globális munkákon.
-      args: ''
+      args: clear/oldalszám
     error:
       nojob: '&cNem találok semmilyen információt.'
     output:
@@ -660,11 +660,7 @@ command:
 message:
   skillup:
     broadcast: '%playername% játékost előléptették a %titlename% %jobname% munkában.'
-    nobroadcast: '&aGratulálok, képességet léptél a(z)&r %titlename% %jobname%&a munkában.'
-  max-level-reached:
-    title: '&2Elérted a max szintet'
-    subtitle: '&2a(z) %jobname% munkában!'
-    chat: '&cElérted a maximális szintet a(z) %jobname% munkában!'
+    nobroadcast: '&aGratulálok, előléptettek a(z)&r %titlename% %jobname%&a munkában.'
   levelup:
     broadcast: '%playername% %joblevel% szintet lépett a(z) %jobname% munkában.'
     nobroadcast: '&aSzintet léptél a(z) %jobname% &amunkában! Szint:&6 %joblevel%&a.'

@@ -271,7 +271,7 @@ settings:
         enabled: true
         # Send every X seconds a message to a player to
         # remind him that he has to login/register
-        messageInterval: 5
+        messageInterval: 10
         # Only registered and logged in players can play.
         # See restrictions for exceptions
         force: true

@@ -1,0 +1,62 @@
+portals:
+  cidadecriativo:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ice41
+    location: 183.0,62.0,-62.0:186.0,66.0,-62.0
+    world: Cidade
+    destination: e:Criativo:0.08640969606339642,17.0,-11.562429814692461:3.2995367:182.40314
+  criativocidade:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: ice41
+    location: -2.0,15.0,-7.0:1.0,19.0,-7.0
+    world: Criativo
+    destination: e:Cidade:184.758480729184,64.0,-63.29370508784644:2.5501628:181.50095
+  cidadenether:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Ice41
+    location: 183.0,62.0,-75.0:186.0,66.0,-75.0
+    world: Cidade
+    destination: e:Cidade_nether:12.511695845323484,71.0,-0.43175642478468484:40.50048:-176.56061
+  nethercidade:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Ice41
+    location: 11.0,69.0,-3.0:14.0,74.0,-3.0
+    world: Cidade_nether
+    destination: e:Cidade:184.37746570865707,64.0,-72.46887808429972:12.594083:-176.58705
+  cidademapinha:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Ice41
+    location: 175.0,62.0,-73.0:175.0,66.0,-70.0
+    world: Cidade
+    destination: e:mapinha:-327.35959204278964,70.0,63.77880432972265:6.45001:-90.45004
+  mapinhacidade:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Ice41
+    location: -330.0,68.0,62.0:-330.0,73.0,65.0
+    world: mapinha
+    destination: e:Cidade:177.1742735163666,64.0,-71.10217721830217:9.336393:-90.434875
+

@@ -6,7 +6,7 @@ limitedItem:
     levelup: '&cYou need to level up in [jobname] to use this item!'
 general:
   info:
-    toplineseparator: '&7*********************** &6%playername% &7***********************'
+    toplineseparator: '&7*********************** &6%playerdisplayname% &7***********************'
     separator: '&7*******************************************************'
     paymentType:
       MONEY: Money
@@ -29,7 +29,7 @@ general:
     success: '&eYour command has been performed.'
   error:
     noHelpPage: '&cThere is no help page by this number!'
-    job: '&cThe job you selected does not exist or you not joined to this!'
+    job: '&cThe job you selected does not exist!'
     jobname: '&cCan''t find job by this name!'
     # Only %playername% can be used here
     noinfoByPlayer: '&cNo information found by [%playername%] player name!'
@@ -136,7 +136,7 @@ command:
       info: Resets a player's payment limits
       args: '[playername]'
     output:
-      reseted: '&ePayment limits have been reset for: &2%playername%'
+      reseted: '&ePayment limits have been reset for: &2%playerdisplayname%'
   resetquesttotal:
     help:
       info: Resets a player's done quest counter
@@ -148,7 +148,7 @@ command:
       info: Resets a player's quest
       args: '[playername] [jobname]'
     output:
-      reseted: '&eQuest has been reset for: &2%playername%'
+      reseted: '&eQuest has been reset for: &2%playerdisplayname%'
       noQuests: '&eCan''t find any quests'
   points:
     help:
@@ -161,10 +161,11 @@ command:
       info: Edit player's points.
       args: set/add/take [playername] [amount]
     output:
-      set: '&ePlayers (&6%playername%&e) points was set to &6%amount%'
-      add: '&ePlayer (&6%playername%&e) got additional &6%amount% &epoints. Now they
+      set: '&ePlayers (&6%playerdisplayname%&e) points was set to &6%amount%'
+      add: '&ePlayer (&6%playerdisplayname%&e) got additional &6%amount% &epoints.
+        Now they have &6%total%'
+      take: '&ePlayer (&6%playerdisplayname%&e) lost &6%amount% &epoints. Now they
         have &6%total%'
-      take: '&ePlayer (&6%playername%&e) lost &6%amount% &epoints. Now they have &6%total%'
   editjobs:
     help:
       info: Edit current jobs.
@@ -189,8 +190,8 @@ command:
         lookHover: '&6Press to grab info from block you are looking'
   editquests:
     help:
-      info: Edit current quests.
-      args: ''
+      info: Edit job quests.
+      args: (page)
       output:
         list: '&6[questName] &7- &f[jobName]'
         name: '&eName: &f'
@@ -270,8 +271,8 @@ command:
       cantOpen: '&cCan''t open this page'
       NoPermForItem: '&cYou don''t have required permissions for this item!'
       NoPermToBuy: '&cNo permissions to buy this item'
-      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&e) with required
-        (&6%joblevel%&e) level'
+      NoJobReqForitem: '&cYou don''t have the required job (&6%jobname%&c) with required
+        (&6%joblevel%&c) level'
       NoPoints: '&cYou don''t have enough points'
       NoMoney: '&cYou don''t have enough money'
       NoTotalLevel: '&cTotal jobs level is too low (%totalLevel%)'
@@ -409,7 +410,7 @@ command:
   join:
     help:
       info: Join the selected job.
-      args: '[jobname]'
+      args: '[jobfullname]'
     error:
       alreadyin: You are already in the job %jobname%.
       fullslots: You cannot join the job %jobname%, there are no slots available.
@@ -422,7 +423,7 @@ command:
     help:
       info: Leave the selected job.
       args: '[oldplayerjob]'
-    success: You have left the job %jobname%.
+    success: '&2You have left the job &7[jobname].'
     confirmationNeed: '&cAre you sure you want to leave from&e [jobname]&c job? Type
       the command again within&6 [time] seconds &cto confirm!'
   leaveall:
@@ -543,7 +544,7 @@ command:
       nojob: Can't find any job with this name.
     output:
       topline: '&aTop&e %amount% &aplayers by &e%jobname% &ajob'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      list: '&e%number%&a. &e%playerdisplayname% &alvl &e%level% &awith&e %exp% &aexp'
       show: '&2Show from &e[from] &2until &e[until] &2top list'
   gtop:
     help:
@@ -553,7 +554,7 @@ command:
       nojob: Can't find any information.
     output:
       topline: '&aTop&e %amount% &aplayers by global job level'
-      list: '&e%number%&a. &e%playername% &alvl &e%level% &awith&e %exp% &aexp'
+      list: '&e%number%&a. &e%playerdisplayname% &alvl &e%level% &awith&e %exp% &aexp'
       show: '&2Show from &e[from] &2until &e[until] &2global top list'
   area:
     help:
@@ -581,7 +582,7 @@ command:
       info: Shows statistics.
       args: '[playername]'
     output:
-      topline: '&7************************* &6%playername% &7*************************'
+      topline: '&7************************* &6%playerdisplayname% &7*************************'
       ls: '&7* &6%number%. &3%action%: &6%item% &eqty: %qty% %money%%exp%%points%'
       money: '&6money: %amount% '
       exp: '&eexp: %amount% '
@@ -611,17 +612,17 @@ command:
       info: Transfer a player's job from an old job to a new job.
       args: '[playername] [oldjob] [newjob]'
     output:
-      target: You have been transferred from %oldjobname% to %newjobname%.
+      target: '&fYou have been transferred from %oldjobname% &fto %newjobname%.'
   promote:
     help:
       info: Promote the player X levels in a job.
-      args: '[playername] [jobname] [levels]'
+      args: '[playername] [jobname] [levels] (-cmd)'
     output:
       target: You have been promoted %levelsgained% levels in %jobname%.
   exp:
     help:
       info: Change the player exp for job.
-      args: '[playername] [jobname] set/add/take [amount]'
+      args: '[playername] [jobname] set/add/take [amount](rand_[min]-[max]) (-s) (-sa)'
     error:
       nojob: '&cThis player must first join a job.'
     output:
@@ -675,10 +676,9 @@ command:
     output:
       turnedoff: '&4This feature is turned off!'
       paid:
-        main: '&aYou got:'
-        money: '&e[amount] money'
-        exp: '&7[exp] exp'
-        points: '&6[points] points'
+        ACmoney: '&e+[amount]$ '
+        ACexp: '&7+[exp]XP '
+        ACpoints: '&6+[points]pts '
       'on': '&aToggled: &aON'
       'off': '&aToggled: &4OFF'
   howmuch:
@@ -702,10 +702,10 @@ command:
       args: ''
 message:
   skillup:
-    broadcast: '%playername% has been promoted to a %titlename% %jobname%.'
+    broadcast: '%playerdisplayname% has been promoted to a %titlename% %jobname%.'
     nobroadcast: Congratulations, you have been promoted to a %titlename% %jobname%.
   levelup:
-    broadcast: '%playername% is now a level %joblevel% %jobname%.'
+    broadcast: '%playerdisplayname% is now a level %joblevel% %jobname%.'
     nobroadcast: You are now level %joblevel% %jobname%.
   leveldown:
     message: '&cYou lost level&e %lostLevel%&c in&e %jobname%&c job! Level:&6 %joblevel%&c.'
@@ -750,4 +750,4 @@ signs:
 scoreboard:
   topline: '&2Top &e%jobname%'
   gtopline: '&2Global top list'
-  line: '&2%number%. &e%playername% (&6%level%&e)'
+  line: '&2%number%. &e%playerdisplayname% &e(&6%level%&e)'

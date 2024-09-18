@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 189.113.229.146
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1726055823171
+  login: 1726055682217
+money: '20'
+lastlocation:
+  world: aae8b3a4-8824-489e-b92d-e77330d5d681
+  world-name: Cidade
+  x: 175.88806909892503
+  y: 63.0
+  z: -70.82934023329061
+  yaw: 92.66293334960938
+  pitch: 9.144083023071289
+last-account-name: HenriqueMVieira
+geolocation: Brazil
+logoutlocation:
+  world: 0804d7b0-8eeb-4e02-a905-e664e5c11f42
+  world-name: mapinha
+  x: -316.1051550025425
+  y: 70.0
+  z: 55.35316245770389
+  yaw: 57.74957275390625
+  pitch: 10.050046920776367

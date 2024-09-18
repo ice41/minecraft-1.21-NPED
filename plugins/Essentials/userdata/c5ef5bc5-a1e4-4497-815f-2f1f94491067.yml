@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 188.37.14.231
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1726054911510
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1726057349781
+  login: 1726056642465
+money: '20'
+lastlocation:
+  world: aae8b3a4-8824-489e-b92d-e77330d5d681
+  world-name: Cidade
+  x: 185.07202400392376
+  y: 63.0
+  z: -61.8134360073117
+  yaw: -7.68719482421875
+  pitch: 4.7940826416015625
+last-account-name: Ice41
+geolocation: Portugal
+logoutlocation:
+  world: 59c74910-fafe-4497-ba6c-bf638b0f84a2
+  world-name: Criativo
+  x: 0.03966589211043289
+  y: 16.0
+  z: -12.481917090944439
+  yaw: 25.053085327148438
+  pitch: 10.04953670501709

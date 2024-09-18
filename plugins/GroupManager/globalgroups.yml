@@ -30,6 +30,13 @@ groups:
     - groupmanager.manudel
     - groupmanager.manwhois
     - groupmanager.notify.other
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:jobs_moderator
+    - g:worldedit_moderator
+    - g:worldguard_moderator
+    - g:deathbukkit_moderator
+    - g:wesv_moderator
 
   g:groupmanager_admin:
     permissions:
@@ -39,6 +46,16 @@ groups:
     - groupmanager.manglistp
     - groupmanager.manucheckp
     - groupmanager.manulistp
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:authme_admin
+    - g:jobs_admin
+    - g:multiversecore_admin
+    - g:multiverseportal_admin
+    - g:myhelppages_admin
+    - g:worldedit_admin
+    - g:worldguard_admin
+    - g:bukkit_admin
 
 # Permission nodes for CraftBukkit
 # by many devs and contributors
@@ -184,7 +201,12 @@ groups:
     - essentials.jail.allow.mail
     - essentials.jail.allow.ping
     - essentials.jail.allow.seen
-   g:essentials_vip:
+    - essentials.build
+    - essentials.build.*
+    - essentials.break
+    - essentials.afk
+    - essentials.spawn
+  g:essentials_vip:
     permissions:
     - essentials.afk
     - essentials.afk.auto
@@ -327,4 +349,124 @@ groups:
     - -essentials.reloadall
     - -essentials.plugin
     - essentials.*
+  g:auth_admin:
+    permissions:
+    - authme.admin.* 
+    - authme.admin.accounts 
+    - authme.admin.antibotmessages 
+    - authme.admin.backup 
+    - authme.admin.changemail 
+    - authme.admin.changepassword 
+    - authme.admin.converter 
+    - authme.admin.firstspawn
+    - authme.admin.forcelogin
+    - authme.admin.getemail
+    - authme.admin.getip
+    - authme.admin.lastlogin
+    - authme.admin.purge
+    - authme.admin.purgebannedplayers
+    - authme.admin.purgelastpos
+    - authme.admin.purgeplayer
+    - authme.admin.register
+    - authme.admin.reload
+    - authme.admin.seeotheraccounts
+    - authme.admin.seerecent
+    - authme.admin.setfirstspawn
+    - authme.admin.setspawn
+    - authme.admin.spawn
+    - authme.admin.switchantibot
+    - authme.admin.totpdisable
+    - authme.admin.totpviewstatus
+    - authme.admin.unregister
+    - authme.admin.updatemessages
+    - authme.allowchatbeforelogin
+    - authme.allowmultipleaccounts
+    - authme.bypassantibot
+    - authme.bypassbungeesend
+    - authme.bypasscountrycheck
+    - authme.bypassforcesurvival
+    - authme.bypasspurge
+    - authme.debug.command
+    - authme.debug.country
+    - authme.debug.db
+    - authme.debug.group
+    - authme.debug.limbo
+    - authme.debug.mail
+    - authme.debug.mysqldef
+    - authme.debug.perm
+    - authme.debug.spawn
+    - authme.debug.stats
+    - authme.debug.valid
+    - authme.player.*
+    - authme.player.canbeforced
+    - authme.player.captcha
+    - authme.player.changepassword
+    - authme.player.email
+    - authme.player.email.add
+    - authme.player.email.change
+    - authme.player.email.recover
+    - authme.player.email.see
+    - authme.player.login
+    - authme.player.logout
+    - authme.player.protection.quickcommandsprotection
+    - authme.player.register
+    - authme.player.security.verificationcode
+    - authme.player.seeownaccounts
+    - authme.player.totpadd
+    - authme.player.totpremove
+    - authme.player.unregister
 
+  g:multiverseportals_admin:
+    permissions:
+    - multiverse.portal.access.*
+
+  g:multiverseportals_builder:
+    permissions:
+    - multiverse.portal.access.cidadecriativo
+    - multiverse.portal.access.criativocidade
+    - multiverse.portal.access.cidadenether
+    - multiverse.portal.access.nethercidade
+    - multiverse.portal.access.cidademapinha
+    - multiverse.portal.access.mapinhacidade
+  g:multiverse_builder:
+    permissions:
+    - multiverse.access.Cidade
+    - multiverse.access.Cidade_nether
+    - multiverse.access.Cidade_the_end
+    - multiverse.access.mapinha
+    - multiverse.access.Criativo
+  g:multiverse_admin:
+    permissions:
+    - multiverse.access.*
+  g:worldedit_admin:
+    permissions:
+    - worldedit.*
+  g:worldguard_admin:
+    permissions:
+    - worldguard.*
+  g:authme_builder:
+    permissions:
+    - authme.player.*
+  g:authme_admin:
+    permissions:
+    - authme.admin.*
+    - authme.allowchatbeforelogin
+    - authme.allowmultipleaccounts
+    - authme.bypassantibot
+    - authme.bypassbungeesend 
+    - authme.bypasscountrycheck
+    - authme.bypassforcesurvival
+    - authme.bypasspurge
+    - authme.debug.*
+  g:multiverseportal_builder:
+    permissions:
+    - multiverse.portal.access.*
+    - multiverse.core.build.*
+  g:multiverseportal_admin:
+    permissions:
+    - multiverse.portal.access.*
+  g:multiversecore_admin:
+    permissions:
+    - multiversecore.*
+
+    

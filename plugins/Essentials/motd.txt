@@ -1,10 +1,5 @@
-index-topics:
-	Nped:
-        shortText:&6Bem-Vindo, {PLAYER}&6 ao servidor &0N&1PED&f &c1.13.2!
-        preamble: Moderator - do not abuse these commands
-        commands:
-&6Bem-Vindo, {PLAYER}&6 ao servidor &0N&1PED&f &c1.13.2!
+&6Bem-Vindo, {PLAYER}&6 ao servidor &0N&1PED&f &c1.21.1!
 &fEstá no mundo &2{WORLD}&f, e são: &6{WORLDTIME24}&fh.
 &7No seu bolço tem a quantia de &9{BALANCE}.
-&fUse &C"" &fpara ver a pagina de ajuda.
+&fUse &C"help" &fpara ver a pagina de ajuda.
 &fJogadores online:&7 [ {ONLINE} ] - {PLAYERLIST}.

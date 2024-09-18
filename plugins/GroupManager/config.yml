@@ -76,15 +76,24 @@
         # The element 'all_unnamed_worlds' specifies all worlds that aren't listed, and automatically mirrors them to it's parent.
         # Each child world can be configured to mirror the 'groups', 'users' or both files from its parent.
         world:
-          Cidade_nether:
-          - users
-          - groups
+          Cidade:
+            - Cidade_nether
+            - Cidade_the_end
+            - mapinha
+          # - users
+          # - groups
+          # Cidade_nether:
+          # - users
+          # - groups
           Criativo:
           - users
           - groups
-          Cidade_the_end:
-          - users
-          - groups
+          # Cidade_the_end:
+          # - users
+          # - groups
+          # mapinha:
+          # - users
+          # - groups
           all_unnamed_worlds:
           - users
           - groups
