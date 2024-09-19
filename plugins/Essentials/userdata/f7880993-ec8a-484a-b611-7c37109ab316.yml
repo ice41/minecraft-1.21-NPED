@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 189.113.229.146
+ip-address: 189.113.227.225
 afk: false
 socialspy: false
 npc: false
@@ -16,24 +16,24 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1726055823171
-  login: 1726055682217
+  logout: 1726178068622
+  login: 1726178037018
 money: '20'
 lastlocation:
-  world: aae8b3a4-8824-489e-b92d-e77330d5d681
-  world-name: Cidade
-  x: 175.88806909892503
-  y: 63.0
-  z: -70.82934023329061
-  yaw: 92.66293334960938
-  pitch: 9.144083023071289
+  world: 0804d7b0-8eeb-4e02-a905-e664e5c11f42
+  world-name: mapinha
+  x: -329.9362435487718
+  y: 69.0
+  z: 63.599307037835906
+  yaw: -74.550048828125
+  pitch: 14.100011825561523
 last-account-name: HenriqueMVieira
 geolocation: Brazil
 logoutlocation:
-  world: 0804d7b0-8eeb-4e02-a905-e664e5c11f42
-  world-name: mapinha
-  x: -316.1051550025425
-  y: 70.0
-  z: 55.35316245770389
-  yaw: 57.74957275390625
-  pitch: 10.050046920776367
+  world: aae8b3a4-8824-489e-b92d-e77330d5d681
+  world-name: Cidade
+  x: 180.39784867870532
+  y: 63.0
+  z: -71.4052844631297
+  yaw: 84.46517944335938
+  pitch: 8.886405944824219

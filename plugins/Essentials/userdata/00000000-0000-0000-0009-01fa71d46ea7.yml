@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 189.113.229.146
+ip-address: 189.113.225.137
 afk: false
 socialspy: false
 npc: false
@@ -16,24 +16,24 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1726054737256
-  login: 1726054170434
+  logout: 1726143936573
+  login: 1726143360281
 money: '20'
 lastlocation:
-  world: 0804d7b0-8eeb-4e02-a905-e664e5c11f42
-  world-name: mapinha
-  x: -329.0337
-  y: 69.0
-  z: 63.87806
-  yaw: 71.43550109863281
-  pitch: 17.492340087890625
+  world: 1a319a86-d909-4b12-a04c-5bdb1d068830
+  world-name: Cidade_nether
+  x: 13.04318
+  y: 70.0
+  z: -2.0992637
+  yaw: -161.01608276367188
+  pitch: 18.362640380859375
 last-account-name: BMSVieira
 geolocation: Brazil
 logoutlocation:
   world: aae8b3a4-8824-489e-b92d-e77330d5d681
   world-name: Cidade
-  x: 181.68027
+  x: 179.12721
   y: 63.0
-  z: -70.81571
-  yaw: 103.22662353515625
-  pitch: 4.1576690673828125
+  z: -70.90236
+  yaw: 15.3271484375
+  pitch: 3.9844970703125

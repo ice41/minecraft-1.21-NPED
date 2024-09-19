@@ -1,56 +1,81 @@
-# This is the help configuration file for Bukkit.
-# 
-# By default you do not need to modify this file. Help topics for all plugin commands are automatically provided by
-# or extracted from your installed plugins. You only need to modify this file if you wish to add new help pages to
-# your server or override the help pages of existing plugin commands.
-# 
-# This file is divided up into the following parts:
-# -- general-topics: lists admin defined help topics
-# -- index-topics:   lists admin defined index topics
-# -- amend-topics:   lists topic amendments to apply to existing help topics
-# -- ignore-plugins: lists any plugins that should be excluded from help
-# 
-# Examples are given below. When amending command topic, the string <text> will be replaced with the existing value
-# in the help topic. Color codes can be used in topic text. The color code character is & followed by 0-F.
-# ================================================================
-# 
-# Set this to true to list the individual command help topics in the master help.
-# command-topics-in-master-index: true
-# 
-# Each general topic will show up as a separate topic in the help index along with all the plugin command topics.
-# general-topics:
-#     Rules:
-#         shortText: Rules of the server
-#         fullText: |
-#             &61. Be kind to your fellow players.
-#             &B2. No griefing.
-#             &D3. No swearing.
-#         permission: topics.rules
-# 
-# Each index topic will show up as a separate sub-index in the help index along with all the plugin command topics.
-# To override the default help index (displayed when the user executes /help), name the index topic "Default".
-# index-topics:
-#     Ban Commands:
-#         shortText: Player banning commands
-#         preamble: Moderator - do not abuse these commands
-#         permission: op
-#         commands:
-#             - /ban
-#             - /ban-ip
-#             - /banlist
-# 
-# Topic amendments are used to change the content of automatically generated plugin command topics.
-# amended-topics:
-#     /stop:
-#         shortText: Stops the server cold....in its tracks!
-#         fullText: <text> - This kills the server.
-#         permission: you.dont.have
-# 
-# Any plugin in the ignored plugins list will be excluded from help. The name must match the name displayed by
-# the /plugins command. Ignore "Bukkit" to remove the standard bukkit commands from the index. Ignore "All"
-# to completely disable automatic help topic generation.
-# ignore-plugins:
-#    - PluginNameOne
-#    - PluginNameTwo
-#    - PluginNameThree
-
+general-topics:
+    /ban:
+        shortText: Ban a player
+        fullText: |
+            &6Type &5/ban <playername> &6to ban a player from the server.
+        permission: help.mod
+ 
+    /home:
+        shortText: Go home
+        fullText: |
+            &6Type &5/home &6to go home - home is set by building a bed and clicking it twice.
+        permission: help.default
+ 
+    /kick:
+        shortText: Kick a player
+        fullText: |
+            &6Type &5/kick <playername> &6to disconnect a player from the server.
+        permission: help.mod
+ 
+    /kill:
+        shortText: Kill yourself
+        fullText: |
+            &6Type &5/kill &6to kill yourself, returning to spawn or home if set and losing items.
+        permission: help.default
+ 
+    /list:
+        shortText: List online players
+        fullText: |
+            &6Type &5/list &6to display all online players.
+        permission: help.mod
+ 
+    /me:
+        shortText: Point of view message
+        fullText: |
+            &6Type &5/me <message> &6to say something from your point of view.
+        permission: help.trusted
+ 
+    /nocheatplus:
+        shortText: Display players cheat info
+        fullText: |
+            &6Type &5/nocheatplus playerinfo <playername> &6Shows collected Cheat info on player.
+        permission: help.mod
+ 
+    /pardon:
+        shortText: Pardon a player
+        fullText: |
+            &6Type &5/pardon <playername> &6to pardon a player and allow them access to the server.
+        permission: help.mod
+ 
+    /spawn:
+        shortText: Go to spawn
+        fullText: |
+            &6Type &5/spawn &6to teleport to spawn.
+        permission: help.default
+ 
+    /spawn <location>:
+        shortText: Go to specific spawn
+        fullText: |
+            &6Type &5/spawn <location> &6to teleport to that specific spawn.
+        permission: help.trusted
+ 
+    /spawnl:
+        shortText: List spawns
+        fullText: |
+            &6Type &5/spawnl &6to list spawn locations.
+        permission: help.trusted
+ 
+    /tell:
+        shortText: Private message
+        fullText: |
+            &6Type &5/tell <player> <message> &6to send a private message to that player.
+        permission: help.trusted
+ 
+    /tp:
+        shortText: Teleport player
+        fullText: |
+            &6Type &5/tp <player1> <player2> &6Moves player1 to the same location as player2.
+        permission: help.mod
+ 
+ignore-plugins:
+  - All
