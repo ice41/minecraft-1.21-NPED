@@ -79,17 +79,17 @@ Caso o download da base esteja corrompendo, baixe utilizando o [GitHub Desktop](
 
 Plugins verificados 
 
-- [x] AuthMe
-- [x] ChestShop
-- [x] Essentials
-- [x] GroupManager
+- :heavy_check_mark: AuthMe
+- :heavy_check_mark: ChestShop
+- :heavy_check_mark: Essentials
+- :heavy_check_mark: GroupManager
 - :heavy_multiplication_x: mcMMO
-- [x] Multiverse-Core
-- [x] Multiverse-Inventories
-- [x] Multiverse-Portals
-- [x] PerWorldInventory
-- [x] WorldEdit
-- [x] WorldGuard
+- :heavy_check_mark: Multiverse-Core
+- :heavy_check_mark: Multiverse-Inventories
+- :heavy_check_mark: Multiverse-Portals
+- :heavy_check_mark: PerWorldInventory
+- :heavy_check_mark: WorldEdit
+- :heavy_check_mark: WorldGuard
 - :heavy_multiplication_x: ChestShop
 
 
