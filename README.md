@@ -56,7 +56,6 @@
 1. Clone o projecto pelo guit
 2. Está tendo problemas para baixar?
 Caso o download da base esteja corrompendo, baixe utilizando o [GitHub Desktop](https://desktop.github.com).
-3. Baixe os artefactos [artefacts linux](https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/) ou [artefacts windows](https://runtime.fivem.net/artifacts/fivem/build_server_windows/master/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
