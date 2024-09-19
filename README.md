@@ -75,7 +75,7 @@ Caso o download da base esteja corrompendo, baixe utilizando o [GitHub Desktop](
 
 |checked|unchecked|crossed|
 |---|---|---|
-|:x:|:heavy_minus_sign:|:heavy_check_mark:|
+|:x:|:white_circle:|:heavy_check_mark:|
 
 Plugins verificados 
 
