@@ -74,6 +74,8 @@ Caso o download da base esteja corrompendo, baixe utilizando o [GitHub Desktop](
 <!-- ROADMAP -->
 ## Roadmap
 
+Pluguins verificados 
+
 - [x] AuthMe
 - [x] ChestShop
 - [x] Essentials
