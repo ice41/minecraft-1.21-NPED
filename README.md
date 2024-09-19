@@ -79,14 +79,18 @@ Pluguins verificados
 - [x] ChestShop
 - [x] Essentials
 - [x] GroupManager
-- :x: mcMMO
+- :heavy_multiplication_x: mcMMO
 - [x] Multiverse-Core
 - [x] Multiverse-Inventories
 - [x] Multiverse-Portals
 - [x] PerWorldInventory
 - [x] WorldEdit
 - [x] WorldGuard
-- :x: ChestShop
+- :heavy_multiplication_x: ChestShop
+
+|checked|unchecked|crossed|
+|---|---|---|
+|:heavy_multiplication_x:|:heavy_minus_sign:|:heavy_check_mark:|
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
