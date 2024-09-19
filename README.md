@@ -73,7 +73,11 @@ Caso o download da base esteja corrompendo, baixe utilizando o [GitHub Desktop](
 <!-- ROADMAP -->
 ## Roadmap
 
-Pluguins verificados 
+|checked|unchecked|crossed|
+|---|---|---|
+|:heavy_multiplication_x:|:heavy_minus_sign:|:heavy_check_mark:|
+
+Plugins verificados 
 
 - [x] AuthMe
 - [x] ChestShop
@@ -88,9 +92,6 @@ Pluguins verificados
 - [x] WorldGuard
 - :heavy_multiplication_x: ChestShop
 
-|checked|unchecked|crossed|
-|---|---|---|
-|:heavy_multiplication_x:|:heavy_minus_sign:|:heavy_check_mark:|
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
