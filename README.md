@@ -75,7 +75,7 @@ Caso o download da base esteja corrompendo, baixe utilizando o [GitHub Desktop](
 
 |checked|unchecked|crossed|
 |---|---|---|
-|:heavy_multiplication_x:|:heavy_minus_sign:|:heavy_check_mark:|
+|:x:|:heavy_minus_sign:|:heavy_check_mark:|
 
 Plugins verificados 
 
@@ -83,14 +83,14 @@ Plugins verificados
 - :heavy_check_mark: ChestShop
 - :heavy_check_mark: Essentials
 - :heavy_check_mark: GroupManager
-- :heavy_multiplication_x: mcMMO
+- :x: mcMMO
 - :heavy_check_mark: Multiverse-Core
 - :heavy_check_mark: Multiverse-Inventories
 - :heavy_check_mark: Multiverse-Portals
 - :heavy_check_mark: PerWorldInventory
 - :heavy_check_mark: WorldEdit
 - :heavy_check_mark: WorldGuard
-- :heavy_multiplication_x: ChestShop
+- :x: ChestShop
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
