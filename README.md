@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ice41/minecraft-1.21-NPED">
-    <img src="https://media.discordapp.net/attachments/1074126570920345740/1243687894552674437/NPEDLOGO2023-sem_fundo2.1.png?ex=66eca19c&is=66eb501c&hm=c6f7718e515cff32943b682c0f4f4f7b37fe2daba04768434f69507151f2ab77&=&format=webp&quality=lossless&width=516&height=671" alt="Logo" width="80" height="80">
+    <img src="https://cdn.discordapp.com/attachments/1074126570920345740/1243687894552674437/NPEDLOGO2023-sem_fundo2.1.png?ex=66eca19c&is=66eb501c&hm=c6f7718e515cff32943b682c0f4f4f7b37fe2daba04768434f69507151f2ab77&" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">NPED Minecraft 1.21.1</h3>
