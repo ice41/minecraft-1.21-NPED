@@ -47,7 +47,7 @@
 ## Sobre o projeto
 
 # NPED Minecraft 1.21.1 -
-- **Desinvilvida em 2015 o nosso servidor vem sempre recebendo atualizações**
+- **Desenvilvida em 2015 o nosso servidor vem sempre recebendo atualizações**
 - **Todas as modificações e aplicações feitas por ice41**.
 - **Ice41 realizou deiversos projectos em servidores de Portugal e Brasil sendo Gestor e programador do servidor**.
 
