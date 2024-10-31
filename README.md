@@ -28,6 +28,12 @@
   </a>
 
 <h3 align="center">NPED Minecraft 1.21.1</h3>
+<img src="https://img.shields.io/github/downloads/ice41/minecraft-1.21-NPED/total)" alt=""/>
+<img src="https://img.shields.io/github/languages/count/ice41/minecraft-1.21-NPED" alt=""/>
+<img src="https://img.shields.io/github/languages/top/ice41/minecraft-1.21-NPED?color=yellow" alt=""/>
+<img src="https://img.shields.io/bitbucket/issues/ice41/minecraft-1.21-NPED" alt=""/>
+<img src="https://img.shields.io/github/forks/ice41/minecraft-1.21-NPED?style=social" alt=""/>
+<img src="https://img.shields.io/github/stars/ice41/minecraft-1.21-NPED?style=social" alt=""/>
 
   <p align="center">
     project_description
